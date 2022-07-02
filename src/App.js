@@ -1,24 +1,60 @@
-import logo from './logo.svg';
-import './App.css';
-
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="container">
+        <div className="wordle">
+          <div className="header">Wordle</div>
+          <div className="board">
+            <div className="line">
+              <div className="box"></div>
+              <div className="box"></div>
+              <div className="box"></div>
+              <div className="box"></div>
+              <div className="box"></div>
+            </div>
+            <div className="line">
+              <div className="box"></div>
+              <div className="box"></div>
+              <div className="box"></div>
+              <div className="box"></div>
+              <div className="box"></div>
+            </div>{" "}
+            <div className="line">
+              <div className="box"></div>
+              <div className="box"></div>
+              <div className="box"></div>
+              <div className="box"></div>
+              <div className="box"></div>
+            </div>{" "}
+            <div className="line">
+              <div className="box"></div>
+              <div className="box"></div>
+              <div className="box"></div>
+              <div className="box"></div>
+              <div className="box"></div>
+            </div>
+            <div className="line">
+              <div className="box"></div>
+              <div className="box"></div>
+              <div className="box"></div>
+              <div className="box"></div>
+              <div className="box"></div>
+            </div>
+            <div className="line">
+              <div className="box"></div>
+              <div className="box"></div>
+              <div className="box"></div>
+              <div className="box"></div>
+              <div className="box"></div>
+            </div>{" "}
+          </div>
+          <form className="form">
+            <input type="text" />
+            <button>Submit</button>
+          </form>
+        </div>
+      </div>
+    </>
   );
 }
 
