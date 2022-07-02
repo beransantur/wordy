@@ -59,13 +59,13 @@ body {
   flex: 5;
   display: flex;
   flex-direction: column;
-  gap: 5%;
+  gap: 4%;
 }
 
 .line {
   flex: 1;
   display: flex;
-  gap: 5%;
+  gap: 4%;
 }
 .box {
   flex: 1;
@@ -73,6 +73,21 @@ body {
   font-weight: bold;
   font-size: 2rem;
   opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.success {
+  background-color: green;
+}
+
+.found {
+  background-color: cadetblue;
+}
+
+.fail {
+  background-color: brown;
 }
 
 .form {
@@ -105,9 +120,131 @@ body {
   flex: 0.3;
 }
 
+.gameLost {
+  text-align: center;
+  margin: 0 5px;
+  height: 60%;
+  position: absolute;
+  background-color: red;
+  border: 4px solid white;
+  border-radius: 30px;
+  color: white;
+  opacity: 1;
+}
+
+.gameLost h1,
+.gameLost p {
+  font-size: 30px;
+}
+.gameLost span {
+  font-size: 25px;
+}
+
+.gameLost button {
+  margin-top: 20px;
+  font-size: 25px;
+}
+.gameWon {
+  text-align: center;
+  height: 40%;
+
+  padding: 100px;
+  position: absolute;
+  background-color: green;
+  border: 4px solid white;
+  border-radius: 30px;
+  color: white;
+  opacity: 1;
+}
+
+.gameWon h1 {
+  color: #ababab;
+}
+
+.gameWon h1,
+.gameWon p {
+  font-size: 30px;
+}
+
+.gameWon h1,
+.header,
+.gameLost h1 {
+  font-weight: 700;
+}
+
+.gameWon button {
+  font-size: 25px;
+}
+
+/****************************************** HOWTOPLAY ******************************************/
+
+.howToPlay {
+  text-align: center;
+  height: 60%;
+  padding: 50px;
+  position: absolute;
+  background-color: brown;
+  border: 4px solid white;
+  border-radius: 30px;
+  color: white;
+  opacity: 1;
+}
+
+.howToPlayLine {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  text-align: left;
+}
+.howToPlayLine span {
+  font-size: 17px;
+}
+
+.howToPlay h1 {
+  color: #ababab;
+  color: cornflowerblue;
+}
+
+.howToPlay button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 30px;
+  padding: 10px 20px;
+  border-radius: 15px;
+  background-color: blueviolet;
+  color: white;
+}
+.howToPlayBox {
+  width: 25%;
+  height: 50px;
+  display: inline-block;
+  margin-left: 20px;
+}
+.navbar-nav span {
+  cursor: pointer;
+}
+
 @media (max-width: 768px) {
   .wordle {
     height: 90vh;
     width: 90vw;
+  }
+
+  .gameLost {
+    width: 70% !important;
+  }
+
+  .gameWon {
+    width: 90% !important;
+  }
+  .gameWon h1,
+  .gameWon p {
+    font-size: 25px;
+  }
+
+  .gameWon button {
+    font-size: 20px;
   }
 }
