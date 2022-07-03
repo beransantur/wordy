@@ -2,7 +2,6 @@ import { useFormik } from "formik";
 import { useState, useEffect } from "react";
 import wordBank from "../data/wordBank";
 import Line from "./Line";
-import * as Icon from "react-bootstrap-icons";
 
 const words = wordBank;
 
@@ -107,6 +106,7 @@ const Board = () => {
               <img
                 src={require("../images/letter-w-image-colorful.png")}
                 className="w-icon"
+                alt=""
               />
             </a>
             <button
