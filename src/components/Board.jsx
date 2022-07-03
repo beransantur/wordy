@@ -49,7 +49,7 @@ const Board = () => {
     <div className="wordle-container">
       {gameState.isGameLost && (
         <div className="gameLost d-flex justify-content-center flex-column bg-secondary p-3 w-25">
-          <h1 className="text-danger ">YOU'VE LOST!</h1>
+          <h1 className="text-danger ">YOU LOST!</h1>
           <p>Correct word was </p>
           <span className="text-warning">{solution}</span>
           <p>Wanna try again? </p>
@@ -104,7 +104,10 @@ const Board = () => {
         <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
           <div class="container pt-2">
             <a class="navbar-brand" href="#home">
-              <Icon.Quora size={35} />
+              <img
+                src={require("../images/letter-w-image-colorful.png")}
+                className="w-icon"
+              />
             </a>
             <button
               class="navbar-toggler"
@@ -119,14 +122,21 @@ const Board = () => {
                 <span class="nav-link" onClick={() => setIsInfoClicked(true)}>
                   HOW TO PLAY
                 </span>
-                <span class="nav-link">CONTACT</span>
+                <a
+                  href="https://www.linkedin.com/in/beran-santur-810b19206/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="contact-link"
+                >
+                  <span class="nav-link">CONTACT</span>
+                </a>
               </div>
             </div>
           </div>
         </nav>{" "}
       </section>
       <div className="wordle">
-        <div className="header">Wordle</div>
+        <div className="header">WORDY</div>
         <div className="board">
           {guesses.map((guess, index) => {
             let isCurrentGuess =
@@ -168,7 +178,7 @@ const Board = () => {
       </div>
       <section class="mt-3 p-2 bg-dark text-white text-center footer w-100">
         <div class="container">
-          <p class="lead">Copyright &copy; 2022 Beran Santur</p>
+          <p class="lead">&copy;Copyright 2022 Beran Santur</p>
         </div>
       </section>
     </div>

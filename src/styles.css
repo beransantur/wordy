@@ -7,7 +7,7 @@
 body {
   margin: 0;
   opacity: 0.8;
-  background-image: url("C:\software-projects\personal-projects\projects\wordle-clone\src\img\view.jpg");
+  background-image: url("/src/images/view.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -98,6 +98,10 @@ body {
   gap: 20px;
 }
 
+.w-icon {
+  width: 55%;
+}
+
 .form input {
   padding: 10px;
   border-radius: 20px;
@@ -176,6 +180,10 @@ body {
   font-size: 25px;
 }
 
+.form button:disabled {
+  color: #666666;
+}
+
 /****************************************** HOWTOPLAY ******************************************/
 
 .howToPlay {
@@ -188,9 +196,12 @@ body {
   border-radius: 30px;
   color: white;
   opacity: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .howToPlayLine {
+  flex: 1;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -207,6 +218,8 @@ body {
 }
 
 .howToPlay button {
+  flex: 1;
+
   outline: none;
   border: none;
   cursor: pointer;
@@ -226,6 +239,9 @@ body {
   cursor: pointer;
 }
 
+.contact-link {
+  text-decoration: none;
+}
 @media (max-width: 768px) {
   .wordle {
     height: 90vh;
@@ -234,6 +250,18 @@ body {
 
   .gameLost {
     width: 70% !important;
+  }
+  .gameLost h1,
+  .gameLost p {
+    font-size: 25px;
+  }
+  .gameLost span {
+    font-size: 25px;
+  }
+
+  .gameLost button {
+    margin-top: 20px;
+    font-size: 25px;
   }
 
   .gameWon {
